@@ -17,6 +17,9 @@ dotenv.config();
     MongooseModule.forRoot(
       `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_CLUSTER}.gjbdf3j.mongodb.net/${process.env.MONGODB_DATABASE}?retryWrites=true&w=majority`,
     ),
+    // MongooseModule.forRoot(
+    // `mongodb://mongo:hGc-4HhB-AAd6BHB5CaCCBD2-6CbCa3f@monorail.proxy.rlwy.net:53931/stock-filedb?authSource=admin`,
+    // ),
     UserModule,
     AuthModule,
     UploadModule,
